@@ -1,0 +1,14 @@
+//
+//  Debug_ccov.xcconfig
+//  ConnectSDK
+//
+//  Created by Eugene Nikolskyi on 1/30/15.
+//  Copyright (c) 2015 LG Electronics. All rights reserved.
+//
+
+// Xcode configuration file for a Debug test configuration with code covarage
+// support.
+
+GCC_GENERATE_TEST_COVERAGE_FILES = YES
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) DEBUG_CCOV=1

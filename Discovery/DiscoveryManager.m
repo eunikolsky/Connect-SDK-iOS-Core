@@ -702,4 +702,15 @@
     }
 }
 
+
+#pragma mark - Tests support
+
+#ifdef DEBUG_CCOV
++ (void)load {
+    // for tests with code coverage only
+    [[NSUserDefaults standardUserDefaults] setValue:@"XCTestLog,GcovTestObserver"
+                                             forKey:@"XCTestObserverClass"];
+}
+#endif
+
 @end
