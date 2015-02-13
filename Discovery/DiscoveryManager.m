@@ -37,6 +37,11 @@
 
 #import <SystemConfiguration/CaptiveNetwork.h>
 
+#ifdef CONNECT_SDK_ENABLE_LOG
+#error Sorry, logs are off today
+#endif
+
+
 @interface DiscoveryManager() <DiscoveryProviderDelegate, ServiceConfigDelegate>
 
 @end
